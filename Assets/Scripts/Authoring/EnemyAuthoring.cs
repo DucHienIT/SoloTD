@@ -17,10 +17,10 @@ public class EnemyAuthoring : MonoBehaviour
 
             AddComponent(entity, new EnemyTag());
 
-            AddComponent(entity, new HealthComponent
+            AddComponent(entity, new Health
             {
                 CurrentHealth = authoring.MaxHP,
-                MaxHealth = authoring.MaxHP
+                Max = authoring.MaxHP
             });
 
             AddComponent(entity, new MoveSpeedComponent
